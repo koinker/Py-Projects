@@ -7,7 +7,7 @@ path_pattern = re.compile(
 )
 
 def is_valid_path(path):
-    
+    #todo: open file with list of paths to check against
     return path_pattern.match(path) is not None
 
 def walk_filesystem(root):
