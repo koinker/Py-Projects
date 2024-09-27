@@ -7,11 +7,11 @@ path_pattern = re.compile(
 )
 
 def is_valid_path(path):
-    """Check if the given path matches the Windows file path regex."""
+    
     return path_pattern.match(path) is not None
 
 def walk_filesystem(root):
-    """Walk the filesystem starting from the given root directory."""
+    
     for dirpath, dirnames, filenames in os.walk(root):
         # Validate the directory path
         if is_valid_path(dirpath):
