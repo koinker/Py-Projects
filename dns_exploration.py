@@ -35,7 +35,7 @@ def SubdomainSearch(domain, dictonary, nums):
 if __name__ == "__main__":
 
     domain = input("Enter Domain: ")
-    d = "/usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt"
+    d = "^WORDLIST^"
     with open(d,"r") as f:
         dictionary = f.read().splitlines()
     SubdomainSearch(domain,dictionary,False)
